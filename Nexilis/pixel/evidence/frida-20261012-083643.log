@@ -1,0 +1,19 @@
+[force-clean] ART methods deoptimized
+[force-clean] native loader gate installed
+[force-clean] hooks installed
+[force-clean] startup gate: CLEAN
+[force-clean] offline preflight payload normalized
+[force-clean] offline preflight: PASSED
+[force-clean] boot worker preflight: bypassed
+[force-clean] configured boot mode: online
+[force-clean] network enabled after preflight: /api/v1/nonce
+[force-clean] network enabled after preflight: /api/v1/nonce
+[force-clean] boot failure: java.lang.SecurityException: Pembuatan keypair attestation registrasi gagal.(7404).
+java.security.ProviderException: Failed to generate key pair.
+android.security.KeyStoreException: System error (internal Keystore code: 4 message: system/security/keystore2/src/security_level.rs:625
+
+Caused by:
+    0: system/security/keystore2/src/security_level.rs:199
+    1: system/security/keystore2/src/security_level.rs:176: Failed to handle super encryption.
+    2: system/security/keystore2/src/super_key.rs:762: User ECDH key missing.
+    3: Error::Rc(r#SYSTEM_ERROR))

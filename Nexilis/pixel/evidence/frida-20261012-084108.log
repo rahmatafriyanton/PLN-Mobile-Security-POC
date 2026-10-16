@@ -1,0 +1,93 @@
+[force-clean] ART methods deoptimized
+[force-clean] native loader gate installed
+[force-clean] hooks installed
+[diagnostic] Build patch=2023-11-05; property=2026-09-05
+[force-clean] startup gate: CLEAN
+[force-clean] offline preflight payload normalized
+[force-clean] offline preflight: PASSED
+[force-clean] boot worker preflight: bypassed
+[force-clean] configured boot mode: online
+[force-clean] network enabled after preflight: /api/v1/nonce
+[force-clean] cached registration payload normalized
+
+======== REGISTER REQUEST ========
+url: https://nexilis.io/ztadev/api/v1/register
+{
+  "lib_protector_sha256": "4702d17cde00400e1dc0788683cded0d58149fb004704bd871615f060ad427c6",
+  "nonce_id": "15d97001-aa20-4e15-aec0-963a9c10eee7",
+  "nonce_b64": "<redacted length=43>",
+  "package_name": "com.app.plnmobile",
+  "version_code": 2,
+  "attestation_cert_chain_b64": "<redacted length=6945>",
+  "environment": {
+    "debug_mode": false,
+    "native_checks_pass": true,
+    "libprotector_runtime_sha256": "4702d17cde00400e1dc0788683cded0d58149fb004704bd871615f060ad427c6",
+    "libwatchman_runtime_sha256": "74f41e6ca4709a5b1d3d4f19c5660d9a94b2e1dc20be925e4f2f703d2d2c8992",
+    "libflutter_runtime_sha256": "ee37eb8be8e01a0d840558f75e0a09c4ca135d721c2ca6145c050e4f89785129",
+    "developer_options_off": true,
+    "adb_off": true,
+    "unknown_sources_off": true,
+    "min_sdk_met": true,
+    "no_suspicious_packages": true,
+    "package_ok": true,
+    "signer_ok": true,
+    "apk_signer_sha256": "5a1323aa9edccf0853dc1857e9e060f27e7e5b4e7d74d59235e2fe927b3db184",
+    "apk_signer_sha256GPS": "",
+    "play_store_install": true,
+    "dangerous_package_present": false,
+    "accessibility_enabled": false,
+    "accessibility_high_risk": false,
+    "rat_present": false,
+    "rat_a11y_active": false,
+    "screen_share_active": false,
+    "app_cloned": false,
+    "clone_env_mask": 0,
+    "clone_evidence_version": 1,
+    "screen_recording_active": false,
+    "overlay_detected": false,
+    "tapjacking_detected": false,
+    "automation_active": false,
+    "ld_preload_present": false,
+    "uncertified_rom": false,
+    "clock_skew_exceeded": false,
+    "arp_anomaly": false,
+    "dns_hijack": false,
+    "behavioral_anomaly": false,
+    "vpn_active": false,
+    "proxy_configured": false,
+    "network_validated": true,
+    "captive_portal": false,
+    "is_clean": true,
+    "sdk_version": 34,
+    "build_fingerprint": "google\/redfin\/redfin:14\/UP1A.231105.001.B2\/11260668:user\/release-keys",
+    "failure_reason": "",
+    "security_patch": "2023-11-05",
+    "rc6_posture_schema": "rc6.1-v1",
+    "rc6_runtime_instrumentation_defense": true,
+    "rc6_modern_stealth_mask": "0",
+    "rc6_modern_stealth_detected": false,
+    "rc4_offline_preflight": true,
+    "screen_capture_prevention_required": true,
+    "security_patch_present": true,
+    "play_integrity_cached_known": true,
+    "offline_network_probe_mode": "local_state_only",
+    "offline_preflight_sha256": "0355c9cbd22468cda1119a62e5b8808b017bbce0b51ae17ed674d1aafe39038d"
+  },
+  "environment_sha256": "0355c9cbd22468cda1119a62e5b8808b017bbce0b51ae17ed674d1aafe39038d",
+  "public_key_der_b64": "<redacted length=392>",
+  "approval_public_key_der_b64": "<redacted length=124>",
+  "play_integrity_token": "<redacted length=1434>",
+  "cert_spki_sha256": "tIAA8SPvbLBRxOAeQYkymqN3MhVpPuJFAbfLxihiMAU="
+}
+[analysis] JSON environment dapat diubah lokal; attestation chain, Play Integrity token, nonce, dan key binding diverifikasi server.
+==================================
+
+[force-clean] network enabled after preflight: /api/v1/register
+
+======== PROTECTOR API ERROR ========
+endpoint: POST /api/v1/register
+java.lang.IllegalStateException: HTTP 400: {"message":"Perangkat/jaringan/OS/aplikasi tidak memenuhi syarat keamanan. (8747)"}
+=====================================
+
+[force-clean] network enabled after preflight: /api/v1/nonce

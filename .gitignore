@@ -1,0 +1,15 @@
+# APK sources and generated packages
+*.apk
+*.apk.idsig
+*.idsig
+**/build/
+
+# Generated reverse-engineering workspaces and runtime evidence
+Nexilis/emulator/src/
+Zimpe/_cmp/
+Zimpe/diagnostics/
+
+# Local runtime artifacts
+**/__pycache__/
+*.py[cod]
+.DS_Store
